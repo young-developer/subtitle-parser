@@ -7,6 +7,7 @@ enum SubtitleFormat
 	MicroDvd,
 	WebVtt
 };
+class SubtitleParser;
 
 class SubtitleParserFactory
 {
@@ -15,7 +16,7 @@ private:
 	std::string _fileName;
 public:
 	SubtitleParser* getParser();
-	SubtitleParserFactory::SubtitleParserFactory(std::string fileName);
+        SubtitleParserFactory(std::string fileName);
 	SubtitleFormat checkSubtitleFormat(std::string fileName);
 	~SubtitleParserFactory(void);
 };

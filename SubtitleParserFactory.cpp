@@ -47,6 +47,7 @@ SubtitleParser* SubtitleParserFactory::getParser()
 			std::cout<<"Error: Undefined subtitle format!";
 		}
 	}
+        throw;
 }
 
 SubtitleParserFactory::~SubtitleParserFactory(void)

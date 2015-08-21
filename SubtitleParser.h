@@ -11,6 +11,6 @@ public:
 	virtual std::vector<SubtitleItem*> getSubtitles();
 	std::string getFileData();
 	SubtitleParser(void);
-	~SubtitleParser(void);
+        virtual ~SubtitleParser(void);
 };
 
