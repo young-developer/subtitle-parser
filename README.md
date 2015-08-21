@@ -1,5 +1,5 @@
 # C++ Subtitle Parser Library
-Subtitle-parser - A simple C++ Subtitle Parser library.
+LibSub-Parser - A simple C++ Subtitle Parser library.
 ___
 #### Formats
 * SubRip
