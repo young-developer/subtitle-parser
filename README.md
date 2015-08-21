@@ -1,0 +1,1 @@
+# C++ Subtitle Parser Library
