@@ -1,0 +1,12 @@
+#ifndef SUBPARSER_GLOBAL_H
+#define SUBPARSER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(SUBPARSER_LIBRARY)
+#  define SUBPARSERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define SUBPARSERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SUBPARSER_GLOBAL_H

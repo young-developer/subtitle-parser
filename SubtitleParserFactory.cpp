@@ -31,6 +31,10 @@ SubtitleFormat SubtitleParserFactory::checkSubtitleFormat(std::string fileName)
 	{
 		return WebVtt;
 	}
+    else
+    {
+        return UndefinedType;
+    }
 }
 
 SubtitleParser* SubtitleParserFactory::getParser()
