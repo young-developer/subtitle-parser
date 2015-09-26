@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-08-30T15:03:00
+# Project created by QtCreator 2015-09-26T21:26:31
 #
 #-------------------------------------------------
 
@@ -8,24 +8,21 @@ QT       -= gui
 
 TARGET = SubParser
 TEMPLATE = lib
-
-DEFINES += SUBPARSER_LIBRARY
+CONFIG += staticlib
 
 SOURCES += subparser.cpp \
-        SubtitleWord.cpp \
-        SubtitleItem.cpp \
-        SubtitleParser.cpp \
-        SubRipParser.cpp \
-        SubtitleParserFactory.cpp
+    SubRipParser.cpp \
+    SubtitleItem.cpp \
+    SubtitleParser.cpp \
+    SubtitleParserFactory.cpp \
+    SubtitleWord.cpp
 
 HEADERS += subparser.h \
-        subparser_global.h \
-        SubtitleWord.h \
-        SubtitleItem.h \
-        SubtitleParser.h \
-        SubRipParser.h \
-        SubtitleParserFactory.h
-
+    SubRipParser.h \
+    SubtitleItem.h \
+    SubtitleParser.h \
+    SubtitleParserFactory.h \
+    SubtitleWord.h
 unix {
     target.path = /usr/lib
     INSTALLS += target

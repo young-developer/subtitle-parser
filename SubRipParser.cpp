@@ -9,11 +9,11 @@
 #include "SubtitleParser.h"
 #include "SubRipParser.h"
 
-SrtParser::SrtParser(void)
+SubRipParser::SubRipParser(void)
 {
 }
 
-void SrtParser::parse(std::string fileName)
+void SubRipParser::parse(std::string fileName)
 {
 	try 
 	{
@@ -47,12 +47,12 @@ void SrtParser::parse(std::string fileName)
 	}
 }
 
-SrtParser::SrtParser(std::string fileName)
+SubRipParser::SubRipParser(std::string fileName)
 {
 	_fileName = fileName;
 	parse(fileName);
 }
 
-SrtParser::~SrtParser(void)
+SubRipParser::~SubRipParser(void)
 {
 }

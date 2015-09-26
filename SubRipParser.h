@@ -1,12 +1,12 @@
 #pragma once
 
-class SrtParser :
+class SubRipParser :
 	public SubtitleParser
 {
 	void parse(std::string fileName);
 public:
-	SrtParser(void);
-	SrtParser(std::string fileName);
-	~SrtParser(void);
+	SubRipParser(void);
+	SubRipParser(std::string fileName);
+	~SubRipParser(void);
 };
 

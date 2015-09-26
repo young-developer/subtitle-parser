@@ -43,7 +43,7 @@ SubtitleParser* SubtitleParserFactory::getParser()
 	{
 		case SubRip:
 		{
-			return new SrtParser(_fileName);
+			return new SubRipParser(_fileName);
 		}
 		break;
 		default:
