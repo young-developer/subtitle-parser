@@ -55,4 +55,9 @@ SubRipParser::SubRipParser(std::string fileName)
 
 SubRipParser::~SubRipParser(void)
 {
+    for(int i=0;i != _subtitles.size();++i)
+    {
+        if(_subtitles[i])
+            delete _subtitles[i];
+    }
 }
