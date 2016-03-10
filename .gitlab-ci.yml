@@ -8,6 +8,7 @@ build_job:
   - make
   only:
     - master
+    - Version32bit
 cleanup_build_job:
   stage: cleanup_build
   script:
