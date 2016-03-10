@@ -16,3 +16,4 @@ cleanup_build_job:
   when: on_failure
   only:
     - master
+    - Version32bit
